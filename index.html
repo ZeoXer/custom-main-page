@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./house-door-fill.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>我的首頁</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row my-2 g-3">
+        <div class="col-3 d-flex align-items-stretch">
+          <div class="card rounded-5 w-100 border-0">
+            <i class="bi bi-code-square m-auto fs-6r text-blue"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-4">Udemy</h5>
+              <a
+                href="https://www.udemy.com/home/my-courses/learning/"
+                class="col-12 btn btn-primary text-white rounded-pill link-btn"
+                target="_blank"
+                ><span class="arrow">>></span> 前往快樂學習園地 :P</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex align-items-stretch">
+          <div class="card rounded-5 w-100 border-0 position-relative">
+            <a
+              class="bi bi-file-earmark-text-fill m-auto fs-6r text-black"
+              data-bs-toggle="offcanvas"
+              role="button"
+              href="#hackmdBookList"
+            ></a>
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-4">HackMD</h5>
+              <div class="row">
+                <input
+                  type="text"
+                  id="hackmdSearchContent"
+                  class="col-8 d-block text-center px-4 py-2 bg-primary text-white border-0 rounded-start-5 border-1 fs-9over10r"
+                  placeholder="在 HackMD 搜尋..."
+                />
+                <a
+                  href="#"
+                  id="hackmdSearchBtn"
+                  class="col-4 d-flex btn btn-primary rounded-0 rounded-end-5 justify-content-center align-items-center fs-6 text-white search-btn"
+                  ><i class="bi bi-search me-2"></i> 搜尋</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="hackmdBookList"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="hackmdBookList">
+                HackMD 書本清單
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a
+                    href="https://hackmd.io/@ZeoXer/machine-learning"
+                    target="_blank"
+                    class="d-block text-decoration-none"
+                    >ML 學習筆記</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://hackmd.io/@ZeoXer/computer-network"
+                    target="_blank"
+                    class="d-block text-decoration-none"
+                    >計算機網路</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex align-items-stretch">
+          <div class="card rounded-5 w-100 border-0">
+            <i class="bi bi-github m-auto fs-6r"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-4">GitHub</h5>
+              <a
+                href="https://github.com/"
+                class="col-12 btn btn-primary text-white rounded-pill link-btn"
+                target="_blank"
+                ><span class="arrow">>></span> 前往爛扣儲存庫-.-</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex align-items-stretch">
+          <div class="card rounded-5 w-100 border-0">
+            <i class="bi bi-bucket-fill m-auto fs-6r text-blue"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-4">BitBucket</h5>
+              <a
+                href="https://bitbucket.org/mrhost1/workspace/overview/"
+                class="col-12 btn btn-primary text-white rounded-pill link-btn"
+                target="_blank"
+                ><span class="arrow">>></span> 前往公司專案庫</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex align-items-stretch">
+          <div class="card rounded-5 w-100 border-0">
+            <i class="bi bi-envelope m-auto fs-6r text-orange"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-4">Gmail</h5>
+              <a
+                href="https://mail.google.com/mail/u/0/#inbox"
+                class="col-12 btn btn-primary text-white rounded-pill link-btn"
+                target="_blank"
+                ><span class="arrow">>></span> 前往收信</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex align-items-stretch">
+          <div class="card rounded-5 w-100 border-0">
+            <i class="bi bi-youtube m-auto fs-6r text-danger"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-4">YouTube</h5>
+              <div class="row">
+                <input
+                  type="text"
+                  id="youtubeSearchContent"
+                  class="col-8 d-block text-center px-4 py-2 bg-primary text-white border-0 rounded-start-5 border-1 fs-9over10r"
+                  placeholder="在 YouTube 搜尋..."
+                />
+                <a
+                  href="#"
+                  id="youtubeSearchBtn"
+                  class="col-4 d-flex btn btn-primary rounded-0 rounded-end-5 justify-content-center align-items-center fs-6 text-white search-btn"
+                  ><i class="bi bi-search me-2"></i> 搜尋</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex align-items-stretch">
+          <div class="card rounded-5 w-100 border-0">
+            <i class="bi bi-book m-auto fs-6r text-orange"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-4">NCCU</h5>
+              <a
+                href="#NCCULinks"
+                class="col-12 btn btn-primary text-white rounded-pill link-btn"
+                data-bs-toggle="offcanvas"
+                role="button"
+                ><span class="arrow">>></span> 開啟列表</a
+              >
+            </div>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="NCCULinks">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="NCCULinks">NCCU 各平台連結</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a
+                    href="https://i.nccu.edu.tw/Home.aspx"
+                    target="_blank"
+                    class="d-block text-decoration-none"
+                    >iNCCU</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://moodle.nccu.edu.tw/"
+                    target="_blank"
+                    class="d-block text-decoration-none"
+                    >Moodle</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://wm5.nccu.edu.tw/learn/index.php"
+                    target="_blank"
+                    class="d-block text-decoration-none"
+                    >WM5</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://nccu.edu.tw/cgi-bin/sp_login"
+                    target="_blank"
+                    class="d-block text-decoration-none"
+                    >Mail2000</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://selectcourse.nccu.edu.tw/regcourse/"
+                    target="_blank"
+                    class="d-block text-decoration-none"
+                    >選課系統</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex align-items-stretch">
+          <div class="card rounded-5 w-100 border-0">
+            <i class="bi bi-robot m-auto fs-6r text-gray"></i>
+            <div class="card-body">
+              <h5 class="card-title fw-bold fs-4">ChatGPT</h5>
+              <a
+                href="https://chat.openai.com/"
+                class="col-12 btn btn-primary text-white rounded-pill link-btn"
+                target="_blank"
+                ><span class="arrow">>></span> 前往拜見 ChatGPT 大大</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="d-none"
+        data-bs-toggle="modal"
+        data-bs-target="#googleModal"
+        id="googleModalBtn"
+      >
+        goolge modal btn
+      </button>
+      <div class="modal fade" id="googleModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-transparent">
+            <div class="row custom-height">
+              <input
+                type="text"
+                id="googleSearchContent"
+                class="col-9 d-block text-center px-4 py-2 bg-primary text-white border-0 rounded-start-5 border-1 fs-5"
+                placeholder="問問 Google 大神..."
+              />
+              <a
+                href="#"
+                id="googleSearchBtn"
+                class="col-3 d-flex btn btn-primary rounded-0 rounded-end-5 justify-content-center align-items-center fs-5 text-white search-btn"
+                ><i class="bi bi-search me-2"></i> 搜尋</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./all.js"></script>
+  </body>
+</html>
